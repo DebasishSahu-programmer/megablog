@@ -1,9 +1,8 @@
-
-Mega Blog Application
+<h1>Mega Blog Application</h1>
 
 A dynamic and scalable blog application built with React, Appwrite, and Tailwind CSS, featuring user authentication, CRUD operations, and responsive design.
 
-Technologies Used
+<h3>Technologies Used</h3>
 - React
 - Appwrite
 - Tailwind CSS
@@ -12,7 +11,7 @@ Technologies Used
 - TinyMCE Text Editor
 - React Hook Forms
 
-Features
+<h3>Features</h3>
 - User authentication and authorization
 - Create, read, update, and delete (CRUD) operations for blog posts
 - Responsive design for optimal user experience across devices
@@ -20,6 +19,6 @@ Features
 - Robust form handling with React Hook Forms
 
 
-Author
-Debasish Sahu
+<h2>Author</h2>
+<p>Debasish Sahu</p>
 
