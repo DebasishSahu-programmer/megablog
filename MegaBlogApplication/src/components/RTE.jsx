@@ -5,7 +5,7 @@ import { Controller } from 'react-hook-form';
 
 export default function RTE({ name, control, label, defaultValue = "" }) {
   const apiKey = import.meta.env.VITE_TINYMCE_API_KEY;
-  console.log("RTE Component Rendered with API Key:", apiKey);
+
   
  
   
