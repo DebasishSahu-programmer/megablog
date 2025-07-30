@@ -59,11 +59,10 @@ function PostForm({ post }) {
         .trim()
         .toLowerCase()
         .replace(/\s+/g, '-')
-        .replace(/[^a-z0-9-]/g, '');
-
-
-    return ''
-  }, [])
+        .replace(/[^a-z0-9-]/g, '')
+  return ''
+  }, []);
+  
   React.useEffect(() => {
     const subscription = watch((value, { name }) => {
       if (name === 'title') {
@@ -92,9 +91,9 @@ function PostForm({ post }) {
           placeholder="Slug"
           className="mb-4"
           {...register("slug", { required: true })}
-          onInput={(e) => {
+         onInput={(e) => {
             setValue("slug", slugTransform(e.currentTarget.value), { shouldValidate: true });
-          }}
+          }}   
         />
         <RTE label="Content :" name="content" control={control} defaultValue={getValues("content")} />
       </div>
