@@ -4,13 +4,10 @@ import { Controller } from 'react-hook-form';
 
 
 export default function RTE({ name, control, label, defaultValue = "" }) {
-<<<<<<< HEAD
- 
-=======
   const apiKey = import.meta.env.VITE_TINYMCE_API_KEY;
-
+  console.log("RTE Component Rendered with API Key:", apiKey);
   
->>>>>>> new-main
+ 
   
   return (
     <div className='w-full'>
@@ -21,11 +18,7 @@ export default function RTE({ name, control, label, defaultValue = "" }) {
         control={control}
         render={({ field: { onChange } }) => (
           <Editor
-<<<<<<< HEAD
-           apiKey="fq8fd6i4rkj6pgtgp26czyrssp1fa28ybe1mg33nbpsny3zq"
-=======
            apiKey={apiKey}
->>>>>>> new-main
             initialValue={defaultValue}
             init={{
               height: 500,
@@ -65,7 +58,3 @@ export default function RTE({ name, control, label, defaultValue = "" }) {
   )
 }
 
-<<<<<<< HEAD
-=======
-
->>>>>>> new-main
